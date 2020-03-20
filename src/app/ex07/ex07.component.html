@@ -1,0 +1,4 @@
+<h3>Exercicio 07</h3>
+<input #parametroid placeholder="digite um id"/>
+<button (click)="retorno = buscarId(parametroid.value)">Buscar id</button>
+<p *ngIf="retorno != undefined">{{retorno.id}} - {{retorno.nome}}</p>

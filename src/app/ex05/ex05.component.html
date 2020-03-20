@@ -1,0 +1,5 @@
+<h3>Exercicio 05</h3>
+<ul *ngFor="let nomeFiltro of nomesFiltro">
+    <li>{{nomeFiltro}}</li>
+</ul>
+<input #box placeholder="digite um nome" (keyup)="buscar(box.value)"/>
